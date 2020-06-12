@@ -1,0 +1,129 @@
+table
+our 			other
+category		product
+product			item
+
+
+our
+category table-
+	-code
+
+product table-
+	-code
+	-thickness
+	-size
+	-c.p
+	-d.p
+	-mrp
+	
+
+sales
+	-total_quantity
+	-total_discount
+	-credit_note
+	-credit_note_amt
+	-deducted_cr_amount
+	-deducted_cr_amt
+	-cr_bal_amt
+	-return_cr_amt
+	-payment_in
+	-cash_dis_amt
+	-total_amount_of_sale_with_discount
+
+invoice
+	-rate of sale per unit
+	-total rate of sale
+	-discount (rs)
+	
+
+
+
+my sale id is bill no
+
+
+purchase_product
+	-total_rate_of_purchase
+
+purchase
+	-total_amount_of_purchase_without_discount
+	-total_discount
+	-total_amount_of_purchase_with_discount
+	-total_quantity
+
+
+new table -purchase_payment_entry  (make a purchase payment entry ui form, refer photo) , (when a purchase product data will be saved, at that time using that bill id suitable will be saved here too, initally some values will be zero)
+	-purchase_paymnet_entry_id (pk)
+	-bill_id
+	-payment_date
+	-supplier_id
+	-payment_type (cash or cheque)
+	-cheque_no
+	-cheque_date
+	-payment_amount
+	-bank_name
+	-narration
+	
+	-credit_amount (total amount of bill)
+	-paid_amount
+	-date
+	-balance_amount
+	-settle_amount
+
+
+
+new table -sale_collection_entry  (make a purchase payment entry ui form, refer photo) , (when a purchase product data will be saved, at that time using that bill id suitable will be saved here too, initally some values will be zero)
+	-purchase_paymnet_entry_id (pk)
+	-bill_id
+	-payment_date
+	-customer_id
+	-payment_type (cash or cheque)
+	-cheque_no
+	-cheque_date
+	-payment_amount
+	-bank_name
+	-narration
+	
+	-credit_amount (total amount of bill)
+	-paid_amount
+	-date
+	-balance_amount
+	-settle_amount
+
+
+*********on hold************
+new table -sales_return
+	-sales_return_id
+	-bill_no
+	-date
+	-product_name
+	-
+	-
+
+
+new table -purchase_return
+	-
+
+****************************
+
+customer
+	-state
+
+
+
+
+gst-
+	-name
+	-from_net__amount
+	to_net_amount
+
+
+make item stock ui refer photo
+
+make reports, refer outstanding reports photo
+
+also have to add backup database
+
+change fy form
+	-cgst
+	-sgst 
+	
